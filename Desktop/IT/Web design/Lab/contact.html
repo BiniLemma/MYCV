@@ -6,48 +6,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="">
+    <link rel="icon" href="Assets/Images/LogoMakr_2yYq67.png">
 </head>
 
 <body>
     <hr>
     <a href="index.html">Home</a> |
     <a href="contact.html">Contact</a> |
-    <a href="galllery.html">Gallery</a>
+    <a href="gallery.html">Gallery</a>
     <hr>
+    <img src="Assets/Images/bini.jpg" alt="" width="350" height="350">
     <table cellspacing='10' cell padding='10'>
-        <tr>
-            <td> <img src="./Assets/Images/assets.png" alt="Binyam Lemma's Profile" width="200" height="200"></td>
-            <td>
-                <h1> Binyam Lemma</h1>
-                <h3> Student at AAIT</h3>
-                <p>My name is Binyam Lemma. Im a second year IT student currently attneding Web Design class.</p>
-            </td>
-        </tr>
-    </table>
-    <h3>Contact us...</h3>
-    <hr>
-    <a href="" tagret="_blank">Facebook</a>
-    <form method="POST" action="https//www.google.com" enctype="utf-8">
-        <label for="fName">First Name:</label> &nbsp;
-        <input type="text" id="fName" name="fName"><br>
-        <label for="sName">Second Name:</label>
-        <input type="text" id="sName" name="sName"> <br>
-        <label for="email">Email:</label>
-        <input type="text" id="email" name="sName"><br> country:
-        <select name="country" id="">
-        <option value="">America</option>
+
+        <h3>Contact me...</h3>
+        <hr>
+
+        <form method="POST" action="https//www.google.com" enctype="utf-8"><br>
+            <label for="fName">First Name:</label> &nbsp;
+            <input type="text" id="fName" name="fName" required size="30" pattern="[a-z] {4,8}" title="4 to 8 lower case letters"><br><br>
+            <span class="validity"></span>
+            <label for="sName">Last Name:</label>
+            <input type="text" id="lName" name="lName" required size="30" pattern="[a-z] {4,8}" title="4 to 8 lower case letters"><br><br>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" title="fill out your email"><br><br> country:
+            <select name="country" id="">
         <option value="">Africa</option>
-        <option value="">Europe</option><br>
-        </select>
-        <br> What do you want to say ?? <br>
-        <textarea name="comment" id="" cols="30" rows="10"></textarea><br>
-        <input type="submit" value="submit">
+        <option value="">Asia</option>
+        <option value="">Australia</option>
+        <option value="">Europe</option>
+        <option value="">Norht America</option>
+        <option value="">South America</option><br>
+        </select><br>
+            <br>What do you want to say ?? <br>
+            <form>
+                <textarea name="comment" id="" cols="40" rows="15"></textarea><br><br>
+                <input type="submit" value="submit">
+            </form>
+            <br>
+            <br><a href="" tagret="_blank">Facebook</a> &nbsp; &nbsp;<a href="" target="_blank">Telegram</a> &nbsp; &nbsp; <a href="" target="_blank">Instagram</a>
+            <br><br>
+            <div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=&t=k&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.embedgooglemap.net">embedgooglemap.net</a></div>
+            <style>
+                .mapouter {
+                    position: relative;
+                    text-align: right;
+                    height: 500px;
+                    width: 600px;
+                }
+                
+                .gmap_canvas {
+                    overflow: hidden;
+                    background: none!important;
+                    height: 500px;
+                    width: 600px;
+                }
+            </style>
+            </div>
+            <hr>
+            <p align="center">Developed by Binyam L. &copy; 2020.</p>
+            <div class="mapouter">
 
-
-    </form>
-    <hr>
-    <p align="center">Developed by Binyam L. &copy; 2020</p>
 </body>
 
 </html>
