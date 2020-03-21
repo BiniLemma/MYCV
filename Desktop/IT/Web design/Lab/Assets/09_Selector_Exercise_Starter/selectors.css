@@ -39,7 +39,7 @@ p {
 /*Make all inputs have a 3px red border*/
 
 body {
-    border: 3px dashed red;
+    border: 3px red dashed;
 }
 
 
@@ -53,7 +53,7 @@ body {
 /* Give the element with id 'special' a 2px solid blue border(pick your own rgb blue)*/
 
 #special {
-    border: 2px solid blue;
+    border: 2px dotted rgb(255, 77, 77);
 }
 
 
@@ -67,27 +67,27 @@ div>p {
 /*Make only inputs with type 'text' have a gray background*/
 
 input[type=text] {
-    background-color: grey;
+    background-color: gray;
 }
 
 
 /* Give both <p>'s inside the 3rd <div> a pink background*/
 
-div:nth-of-type(3)>p {
+div:nth-last-of-type(3)>p {
     background-color: pink;
 }
 
 
 /* Give the 2nd <p> inside the 3rd <div> a 5px white border*/
 
-div:nth-of-type(3)>p:nth-of-type(2) {
-    border: 5px dotted white;
+div:nth-last-of-type(3)>p:nth-last-of-type(2) {
+    border: 5px white double;
 }
 
 
 /* Make the <em> in the 3rd <div> element white and 20px font(font-size:20px)*/
 
-div:nth-of-type(3)>p>em {
+div:nth-last-of-type(3)>p>em {
     color: white;
     font-size: 20px;
 }
@@ -101,7 +101,7 @@ div:nth-of-type(3)>p>em {
 
 /*Make all "checked" checkboxes have a left margin of 50px(margin-left: 50px)*/
 
-div:nth-of-type(2)>ul>li[checked] {
+div:nth-last-of-type(2)>ul>li[:checked] {
     margin-left: 50px;
 }
 
@@ -117,7 +117,7 @@ label {
 
 #special::first-letter {
     color: green;
-    font-size: 100px;
+    font-size: 100;
 }
 
 
@@ -130,6 +130,6 @@ h1:hover {
 
 /*Make the <a> element's that have been visited gray */
 
-div:nth-of-type(4)>a:visited {
-    color: gray;
+div:nth-last-of-type(4)>a:visited {
+    color: blue;
 }
